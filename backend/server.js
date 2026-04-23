@@ -7,8 +7,13 @@ const app = express();
 
 app.use(express.json());
 
-// ✅ FIXED CORS
+// ✅ Allow all origins (good for dev + Render)
 app.use(cors());
+
+// ✅ Root route
+app.get("/", (req, res) => {
+  res.send("API is running...");
+});
 
 // Routes
 app.use("/api/auth", require("./routes/auth"));
@@ -17,7 +22,8 @@ app.use("/api/items", require("./routes/items"));
 mongoose.connect(process.env.MONGO_URI)
   .then(() => {
     console.log("MongoDB Connected");
-    app.listen(process.env.PORT, () =>
+
+    app.listen(process.env.PORT || 5000, () =>
       console.log("Server running")
     );
   });
