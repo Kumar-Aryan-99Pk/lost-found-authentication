@@ -1,0 +1,92 @@
+body {
+  background: #121212;
+  color: #e0e0e0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  margin: 0;
+}
+
+.container {
+  width: 400px;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #1e1e1e;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  background: #2c2c2c;
+  color: white;
+}
+
+input:focus {
+  outline: 2px solid #4caf50;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #4caf50;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+.link {
+  text-align: center;
+  margin-top: 10px;
+  cursor: pointer;
+  color: #81c784;
+}
+
+.item {
+  background: #2c2c2c;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+#message {
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.success {
+  background: #2e7d32;
+}
+
+.error {
+  background: #c62828;
+}
+
+.delete-btn {
+  background: #e53935;
+  margin-top: 5px;
+}
+
+.delete-btn:hover {
+  background: #c62828;
+}
