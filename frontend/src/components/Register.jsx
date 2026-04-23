@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const BASE_URL = "http://172.28.212.109:5000"; // ✅ FIXED
+const BASE_URL = import.meta.env.VITE_API;
 
 export default function Register() {
   const [form, setForm] = useState({});
